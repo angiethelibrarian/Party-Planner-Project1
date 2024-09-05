@@ -45,6 +45,91 @@
     <footer class="text-center py-2">
         <p>Made by: Isaiah Hansen, Angelica Mora, Abbagail Burnat, and Thomas Vogel.</p>
     </footer>
+
+
+
+    <!-- the modals are mostly from bootstraps -->
+     
+    <div class="modal edit-party-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Party Info</h5>
+              <button type="button" class="btn-dark" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="my-2 row">
+                    <p class="col-4">Party Name:</p>
+                    <input class="col-7" type="text">
+                </div>
+                <div class="my-2 row">
+                    <p class="col-4">Date:</p>
+                    <input class="col-7" type="text">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal add-person-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Person Info</h5>
+              <button type="button" class="btn-dark" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="my-2 row">
+                    <p class="col-4">Person Name:</p>
+                    <input class="col-7" type="text">
+                </div>
+                <div class="my-2 row">
+                    <p class="col-4">Assignments:</p>
+                    <input class="col-6" type="text">
+                    <button class="ml-1 p-0 col-1 btn btn-success">add</button>
+                    <ul class="mt-2 p-1 border-top border-primary col-12">
+                        <!-- 
+                        
+                            this is a template for a listed assignment
+                            
+                        <li class="row text-left border-bottom border-dark my-1 mx-0 py-1 px-0">
+                            <p class="col-9">item 1</p>
+                            <button class="col-2 btn btn-danger">remove</button>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal reset-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Reset</h5>
+              <button type="button" class="btn-dark" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body text-center">
+                    <p>Are you sure you want to remove all party data?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Reset Data</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
 <script rel="script.js"></script>
 </body>
 </html>
