@@ -1,12 +1,20 @@
 const EPI = document.querySelector('#EPI');
 const reset = 0
 
+const mReset = document.querySelector('.reset-modal')
+
+const modal = function(modalEl) {
+    modalEl.style.display = "inline";
+}
+
+modal(mReset);
+
 EPI.addEventListener('click', function() {
-    if (EditPartyInfo < 1) {
-        EditPartyInfo++;
+    if (EPI < 1) {
+        EPI++;
 
     }
-    let EditPartyInfo = localStorage.getItem('EditPartyInfo')
+    let EPI = localStorage.getItem('EPI')
 }); 
 
 function resetLocalStorageItem(){
@@ -20,5 +28,6 @@ reset.addEventListener('click', function() {
     }
     let reset = localStorage.clear('reset')
 }); 
+
 console.log(reset)
 console.log(EPI)
