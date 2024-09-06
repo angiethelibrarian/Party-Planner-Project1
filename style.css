@@ -1,0 +1,75 @@
+:root {
+    --color-text-primary: rgb(240, 248, 255);
+    --color-text-secondary: rgb(235, 225, 0);
+    --color-primary: rgb(0, 0, 130);
+    --color-secondary: rgb(200, 200, 200);
+    --base-color-primary: rgb(211, 211, 211);
+    --base-color-secondary: rgb(0, 0, 0);
+}
+
+
+body {
+    background: var(--base-color-primary);
+}
+
+body, header, footer {
+    opacity: 1;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+}
+
+main {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+}
+
+main button {
+    background-color: var(--base-color-secondary);
+    color: var(--color-text-primary);
+}
+
+.list-of-people {
+    list-style: none;
+}
+
+.list-of-people > li {
+    border: 3px solid black;
+}
+
+.list-of-people .assignment-toggle{
+    border-left: 3px solid black;
+    padding-left: 5px;
+}
+
+.list-of-people .assignment-toggle::after{
+    content: ">";
+    margin-left: 5px;
+    border: 1px solid black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.list-of-people > li .person-name{
+    font-size: large;
+}
+
+.list-of-people div {
+    background-color: var(--color-secondary);
+    color: black;
+}
+
+.remove-person {
+    background-color: red;
+}
+
+footer {
+    background-color: var(--base-color-secondary);
+    color: aliceblue;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
