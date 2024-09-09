@@ -1,13 +1,11 @@
 const EPI = document.querySelector('#EPI');
-const reset = 0
+const reset = document.querySelector('#reset')
 
 const mReset = document.querySelector('.reset-modal')
 
-const modal = function(modalEl) {
+const showModal = function(modalEl) {
     modalEl.style.display = "inline";
 }
-
-modal(mReset);
 
 EPI.addEventListener('click', function() {
     if (EPI < 1) {
@@ -19,15 +17,10 @@ EPI.addEventListener('click', function() {
 
 function resetLocalStorageItem(){
     localStorage.removeItem('reset')
-    reset = 1
 }
+
 reset.addEventListener('click', function() {
-    if (reset < 1) {
-        resetLocalStorageItem()
-        return reset;
-    }
-    let reset = localStorage.clear('reset')
+    showModal(mReset);
 }); 
 
-console.log(reset)
 console.log(EPI)
