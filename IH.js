@@ -1,10 +1,14 @@
 const partyNameEl = document.querySelector("main > h2");
 const timeSetEl = document.querySelector("#time-set");
 
+let listOfPeopleContainerEl = document.querySelector(".list-of-people");
 let listOfPeople = document.querySelectorAll(".list-of-people > li");
 
 const listOfPeopleEditBtn = document.querySelectorAll(".list-of-people > li > button:first-of-type");
 const listOfPeopleRemoveBtn = document.querySelectorAll(".list-of-people > li > button.remove-person");
+
+const resetModal = document.querySelector(".reset-modal");
+
 
 
 // for use of editing a guest info. the same modal will be used for a new guest and editing one so this is to help keep track which one is happening so the proper funcitons can be called
@@ -50,6 +54,27 @@ function removeGuestSPI(guestIndex) {
 };
 
 
+
+// ^^^ LocalStorage Funtions ^^^
+// --------------------------------
+// vvv Modal Functions vvv 
+  
+function resetAllPartyInfo() {
+    partyNameEl.textContent = "Party Name";
+    timeSetEl.textContent = "MM/DD/YY";
+    listOfPeopleContainerEl.innerHTML = "";
+    // hide modal
+    resetSPI();
+};
+
+
+
+// ^^^ Modal Functions ^^^
+// --------------------------------
+// vvv page functionality vvv 
+
+
+
 // if there is no data stored then setsup default data, (unfinished) but if there is data then update the html with the stored data
 if(localStorage.getItem("partyPlannerData") === null) {
     resetSPI();
@@ -77,15 +102,14 @@ for(let i = 0; i < listOfPeopleRemoveBtn.length; i++){
     listOfPeopleRemoveBtn[i].addEventListener("click", function(e) {
         const parentLiElement = e.target.parentElement;
         const liElementIndex = Array.from(listOfPeople).indexOf(parentLiElement);
-        console.log(parentLiElement);
-        console.log(liElementIndex);
+
         removeGuestSPI(liElementIndex);
         parentLiElement.remove();
         listOfPeople = document.querySelectorAll(".list-of-people > li");
     });
 }
 
-
+resetModal.querySelector(".modal-footer .btn-danger").addEventListener("click", resetAllPartyInfo);;
 
 
 
