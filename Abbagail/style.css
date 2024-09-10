@@ -1,29 +1,45 @@
 :root {
-    --color-text-primary: rgb(240, 248, 255);
-    --color-text-secondary: rgb(235, 225, 0);
-    --color-primary: rgb(0, 0, 130);
-    --color-secondary: rgb(200, 200, 200);
-    --base-color-primary: rgb(211, 211, 211);
-    --base-color-secondary: rgb(0, 0, 0);
+    --color1: #121F4E;  
+    --color2: #642E93;  
+    --color3: #FAE7DE;  
+    --color4: #EC5EE0;  
+    --color5: #1646BE;  
+    --color6: #C50FC5;  
+
 }
-
-
+    
 body {
-    background: var(--base-color-primary);
+    background: linear-gradient(rgba(0, 0, 104, .5), rgba(0, 0, 100, .5)), URL("./star-image.jpg");
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+
+    /* background-color: #FAE7DE; */
+
 }
 
 body, header, footer {
     opacity: 1;
 }
 
-header {
+/* header {
     background-color: var(--color-primary);
     color: var(--color-text-secondary);
-}
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: linear-gradient(to right, var(--color1), var(--color2), var(--color4), var(--color3), var(--color4), var(--color2), var(--color1));
+    color: var(--color1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
+
 
 main {
     background-color: var(--color-primary);
     color: var(--color-text-primary);
+    color: #FAE7DE;
+    background:linear-gradient(to right, rgba(18, 31, 79, 0.9), rgba(255, 1, 255, 0.9), rgba(18, 31, 79, 0.9));
 }
 
 main button {
@@ -33,6 +49,7 @@ main button {
 
 .list-of-people {
     list-style: none;
+
 }
 
 .list-of-people > li {
@@ -42,6 +59,7 @@ main button {
 .list-of-people .assignment-toggle{
     border-left: 3px solid black;
     padding-left: 5px;
+    
 }
 
 .list-of-people .assignment-toggle::after{
@@ -58,7 +76,7 @@ main button {
 
 .list-of-people div {
     background-color: var(--color-secondary);
-    color: black;
+    color: #FAE7DE;
 }
 
 .remove-person {
@@ -68,8 +86,44 @@ main button {
 footer {
     background-color: var(--base-color-secondary);
     color: aliceblue;
+    background: URL("./grid.png") center, no-repeat; 
+    background-size: 150% 200%;
+    border: 5px solid;
+    border-left:0px;
+    border-right:0px;
+    border-image: linear-gradient(to right, var(--color1), var(--color3));
 }
 
 .modal {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal input {
+    border-radius: 10px;
+    border-color: rgba(0, 0, 100, 0.5);
+    background-color: rgba(0, 130, 200, 0.3);
+}
+
+.modal-content {
+    background-color:rgb(255, 190, 175);
+}
+
+.invitation {
+    position:relative;
+    left: 430px;
+}
+
+.partyPlanner {
+    position:relative;
+    margin: -50px -100px;
+    width: 400px;
+}
+
+.astro_img {
+    width:300px;
+    height:300px;
+    margin-top:-100px;
+}
+.astro_2 {
+    
 }
