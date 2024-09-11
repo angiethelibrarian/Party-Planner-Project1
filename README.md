@@ -61,6 +61,12 @@ If you followed tutorials, include links to those here as well.
 Tutorials:
 https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 https://getbootstrap.com
+https://www.w3schools.com/
+https://getbootstrap.com/
+https://fonts.google.com/selection/embed
+https://www.canva.com/
+https://www.colorzilla.com/gradient-editor/
+
 
 
 
