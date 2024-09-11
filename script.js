@@ -1,24 +1,26 @@
 const EPI = document.querySelector('#EPI');
-const reset = 0
+const reset = document.querySelector('#reset')
+
+const mReset = document.querySelector('.reset-modal')
+
+const showModal = function(modalEl) {
+    modalEl.style.display = "inline";
+}
 
 EPI.addEventListener('click', function() {
-    if (EditPartyInfo < 1) {
-        EditPartyInfo++;
+    if (EPI < 1) {
+        EPI++;
 
     }
-    let EditPartyInfo = localStorage.getItem('EditPartyInfo')
+    let EPI = localStorage.getItem('EPI')
 }); 
 
 function resetLocalStorageItem(){
     localStorage.removeItem('reset')
-    reset = 1
 }
+
 reset.addEventListener('click', function() {
-    if (reset < 1) {
-        resetLocalStorageItem()
-        return reset;
-    }
-    let reset = localStorage.clear('reset')
+    showModal(mReset);
 }); 
-console.log(reset)
+
 console.log(EPI)
