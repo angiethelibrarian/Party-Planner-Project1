@@ -3,12 +3,18 @@
 ## Description
 
 Bootcamp Project 1 - Party Planner Site
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Motivation: 
+This project aimed to create an all-in-one platform that relieves the stress of party planning for people who want to host events. Planning can be overwhelming, whether it's a birthday, wedding, or corporate event. This website aims to streamline the process by offering easy-to-use tools and resources for planning any celebration, instilling confidence in users that their event will be a success.
+
+Why This Project: 
+We built this project to solve a common problem: the hassle of coordinating various aspects of a party, from managing guest lists to booking vendors and selecting themes. Party Planners provides a comprehensive solution, instilling confidence in users that they can organize all their party details in one place.
+
+Problem Solved: 
+The site simplifies event planning by offering features such as guest list management, MVP, all in one platform. This eliminates the need to juggle multiple tools or services, saving users time and allowing them to focus on other aspects of their event.
+
+Lessons Learned: 
+We learned how to integrate multiple services into one cohesive web application throughout the development process. We also gained experience in user experience (UX) design, database management, and ensuring the platform's scalability to handle various event sizes.
 
 ## Table of Contents (Optional)
 
@@ -21,7 +27,12 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+1. Clone the repository:
+steps...
+
+2. Navigate to the project directory
+
+3. Access the website: 
 
 ## Usage
 
@@ -35,7 +46,13 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators
+
+1. Isaiah Hansen: https://github.com/KeelerZoroth
+2. Angelica Mora: https://github.com/angiethelibrarian
+3. Abbigail Burnat: https://github.com/Phypai
+4. Thomas Vogel: https://github.com/Thymezz
+
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
@@ -43,6 +60,15 @@ If you followed tutorials, include links to those here as well.
 
 Tutorials:
 https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+https://getbootstrap.com
+https://www.w3schools.com/
+https://getbootstrap.com/
+https://fonts.google.com/selection/embed
+https://www.canva.com/
+https://www.colorzilla.com/gradient-editor/
+
+
+
 
 ## License
 

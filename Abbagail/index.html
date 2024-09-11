@@ -8,23 +8,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet"> 
-     
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="text-center py-5 mb-2">
-        <h1>Party Planner</h1>
+        <img class="partyPlanner" src="./party_planner_logo.png">
+        <div class="pinkPlanet">
+          <img class="pinkPlanet_img" src="./pinkPlanet.png">
+        </div>
+        <div class="orangePlanet">
+          <img class="orangePlanet_img" src="./orangePlanet.png">
+        </div>
+        <div class="astro"></div>
+          <img class="astro_img" src="./astro.png">
+        </div>
     </header>
 
     <main class="text-center pb-2">
         <h2 class="py-3">Party Name</h2>
         <div class="mb-4">
             <p class="">Date: <span id="time-set">MM/DD/YY</span></p>
-            <button id="EPI" class="p-2 col-6">edit Party Info</button>
+            <button id="EPI" class="p-2 col-6">Edit Party Info</button>
             <button id="reset" class="p-2 col-4">Reset</button>
         </div>
             <ul class="container list-of-people p-0">
@@ -44,12 +49,10 @@
                     </div>
                     <button class="col-1 p-1">edit</button>
                     <button class="col-1 p-1 remove-person">X</button>
-                </li> -->
-
-                <li class="row my-2">
-                  <div class="col-10">
+                </li> --> <li class="row my-2">
+                    <div class="col-10">
                       <p class="person-name">Person 1</p>
-                      <p class="assignment-toggle text-left">Assignments</p>
+                      <p class="assignment-toggle text-left">Party Tasks</p>
                       <ul class="assignment-list text-left">
                           <li>Item 1</li>
                           <li>Item 2</li>
@@ -58,46 +61,23 @@
                   </div>
                   <button class="col-1 p-1">edit</button>
                   <button class="col-1 p-1 remove-person">X</button>
-              </li><li class="row my-2">
-                <div class="col-10">
-                    <p class="person-name">Person 1</p>
-                    <p class="assignment-toggle text-left">Assignments</p>
-                    <ul class="assignment-list text-left">
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-                <button class="col-1 p-1">edit</button>
-                <button class="col-1 p-1 remove-person">X</button>
-            </li><li class="row my-2">
-              <div class="col-10">
-                  <p class="person-name">Person 1</p>
-                  <p class="assignment-toggle text-left">Assignments</p>
-                  <ul class="assignment-list text-left">
-                      <li>Item 1</li>
-                      <li>Item 2</li>
-                      <li>Item 3</li>
-                  </ul>
-              </div>
-              <button class="col-1 p-1">edit</button>
-              <button class="col-1 p-1 remove-person">X</button>
-          </li>
+              </li>
+              
             </ul>
-        <button class="p-2">Add Guest</button>
+        <button id="addGuest" class="p-2">Add Guest</button>
     </main>
+    <div class="yourInvited">
+      <img class="astro_2" src="./astro_2.png">
+      <img class="invitation" src="./Youre_Invited.png">
+    </div>
 
-    <footer class="text-center py-2">
-        <p>Made by: Isaiah Hansen, Angelica Mora, Abbagail Burnat, and Thomas Vogel.</p>
-    </footer>
-
-
+    <footer class="text-center py-5">
+      <p>Made by: Isaiah Hansen, Angelica Mora, Abbagail Burnat, and Thomas Vogel.</p>
+  </footer>
 
     <!-- the modals are mostly from bootstraps -->
-
-
+     
     <div class="modal edit-party-modal" tabindex="-1">
-
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -134,17 +114,17 @@
             <div class="modal-body text-center">
                 <div class="my-2 row">
                     <p class="col-4">Person Name:</p>
-                    <input class="col-7" type="text">
+                    <input id="person" class="col-7" type="text">
                 </div>
                 <div class="my-2 row">
                     <p class="col-4">Assignments:</p>
-                    <input class="col-6" type="text">
-                    <button class="ml-1 p-0 col-1 btn btn-success">add</button>
+                    <input id="assign" class="col-6" type="text">
+                    <button id="addBtn" class="ml-1 p-0 col-1 btn btn-success">add</button>
                     <ul class="mt-2 p-1 border-top border-primary col-12">
-                        <!--
-
+                        <!-- 
+                        
                             this is a template for a listed assignment
-
+                            
                         <li class="row text-left border-bottom border-dark my-1 mx-0 py-1 px-0">
                             <p class="col-9">item 1</p>
                             <button class="col-2 btn btn-danger">remove</button>
@@ -179,9 +159,6 @@
     </div>
 
 
-
-<script rel="script.js"></script>
-<script src="Thomas.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
