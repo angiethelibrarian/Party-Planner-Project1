@@ -54,25 +54,24 @@ main button {
 
 .list-of-people {
     list-style: none;
-
 }
 
 .list-of-people > li {
     border: 3px solid black;
+    
+}
+
+.list-of-people > li > div{
+    background: radial-gradient(var(--color2) -75%, var(--color1) 50%,  var(--color6) 125%);
 }
 
 .list-of-people .assignment-toggle{
     border-left: 3px solid black;
-    padding-left: 5px;
-    
+    padding-left: 5px; 
 }
 
-.list-of-people .assignment-toggle::after{
-    content: ">";
-    margin-left: 5px;
-    border: 1px solid black;
-    padding-right: 5px;
-    padding-left: 5px;
+.list-of-people > li > button:first-of-type {
+    background-color: var(--color1);
 }
 
 .list-of-people > li .person-name{
@@ -127,15 +126,14 @@ footer {
 
 .party-planner {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 0%;
     padding: 0 30%;
 }
 
 .astro-img {
     position: relative;
-    bottom: 70px;
-    width: 50%;
+    bottom: 10%;
 }
 
 .astro-2 {
@@ -145,12 +143,7 @@ footer {
     left: 50px;
 }
 
-
-.pink-planet {
-    overflow: hidden;
-}
-
-.orange-planet {
+.pink-planet, .orange-planet{
     overflow: hidden;
 }
 
@@ -196,3 +189,5 @@ footer {
         left: 25px;
     }
 }
+
+
