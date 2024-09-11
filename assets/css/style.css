@@ -15,7 +15,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 104, .5), rgba(0, 0, 100, .5)), URL("./star-image.jpg");
+    background: linear-gradient(rgba(0, 0, 104, .5), rgba(0, 0, 100, .5)), URL("../images/star-image.jpg");
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -91,7 +91,7 @@ main button {
 footer {
     background-color: var(--base-color-secondary);
     color: aliceblue;
-    background: URL("./grid.png") center, no-repeat; 
+    background: URL("../images/grid.png") center, no-repeat; 
     background-size: 150% 200%;
     border: 5px solid;
     border-left:0px;
@@ -113,7 +113,7 @@ footer {
     background:linear-gradient(to right, var(--color8), var(--color7));
 }
 
-.yourInvited {
+.your-invited {
     display:flex;
     flex-wrap:wrap;
 }
@@ -125,27 +125,27 @@ footer {
     margin-top: -400px;
 }
 
-.partyPlanner {
+.party-planner {
     display:flex;
     flex-wrap:wrap;
     margin-left: 430px;
     width: 400px;
 }
 
-.astro_img {
+.astro-img {
     width:300px;
     height:300px;
     margin-top:-100px;
     margin-bottom:0px;
 }
 
-.astro_2 {
+.astro-2 {
     width: 400px;
     height: 400px;
     margin-left:250px;
 }
 
-.pinkPlanet {
+.pink-planet {
     display:flex;
     flex-wrap:wrap;
     align-items:flex-start;
@@ -154,7 +154,7 @@ footer {
     padding:0px;
 }
 
-.orangePlanet {
+.orange-planet {
     display:flex;
     flex-wrap:wrap;
     align-items:flex-end;
@@ -163,12 +163,12 @@ footer {
     padding:0px;
 }
 
-.pinkPlanet_img {
+.pink-planet-img {
     height: 500px;
     width: 500px;
 }
 
-.orangePlanet_img {
+.orange-planet-img {
     height: 500px;
     width: 500px;
 }
