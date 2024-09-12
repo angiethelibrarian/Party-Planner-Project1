@@ -131,11 +131,6 @@ footer {
     padding: 0 30%;
 }
 
-.astro-img {
-    position: relative;
-    bottom: 10%;
-}
-
 .astro-2 {
     max-width: 400px;
     max-height: 400px;
