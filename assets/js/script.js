@@ -10,9 +10,6 @@ const listOfPeopleRemoveBtn = document.querySelectorAll(".list-of-people > li > 
 const resetModal = document.querySelector(".reset-modal");
 
 
-
-
-
 const partyDateInput = document.querySelectorAll('.edit-party-modal .modal-body div')[1];
 const editPartySaveBtn = document.querySelector('.edit-party-modal .modal-footer .btn-primary');
 const partyNameModalEl = document.querySelectorAll('.edit-party-modal .modal-body div')[0];
@@ -324,3 +321,105 @@ for (let i = 0; i < mAllCloseBtn.length; i++){
 
 
 
+const partyDateInput = document.querySelectorAll('.edit-party-modal .modal-body div')[1];
+const partyNameEL = document.querySelector('main > h2');
+const partyDateEl = document.querySelector("#time-set");
+const editPartySaveBtn = document.querySelector('.edit-party-modal .modal-footer .btn-primary');
+const partyNameModalEl = document.querySelectorAll('.edit-party-modal .modal-body div')[0];
+const addGuestButton = document.querySelector('main > button')
+const addTaskButton = document.querySelector('.add-task-btn'); // Add Task button reference
+const taskListEl = document.querySelector('.task-list'); // Task list container
+//const modalAssignmentsInput = addPersonModal.querySelector();
+
+let editGuestInfo = true;
+const modalGuestNameInput = document.querySelector('.guest-modal input[name="guest-name"]');
+const modalAssignmentsInput = document.querySelector('.guest-modal ul');
+const addPersonModal = document.querySelector('.guest-modal');
+
+
+
+//Open Add Guest Model
+addGuestButton.onclick = function() {
+    editGuestInfo =false; //reset to adding a new guest
+    modalGuestNameInput.value = ''; //clear modal input fields
+    addPersonModal.style.display = 'block';
+
+
+}
+// Open Edit Guest Modal
+addPersonModal.querySelector('.modal-footer .btn-success').onclick = function() {
+    const updatedName = modalGuestNameInput.value;
+    const updatedAssignments = Array.from(modalAssignmentsInput.querySelectorAll('li')).map(li => li.textContent);
+    editGuestSPI(guestIndex, updatedName, updatedAssignments);
+    hideModal(addPersonModal);
+
+
+    // Local storage function would go here
+}
+
+    // Reset the Party modal
+function resetEditPartyModal() {
+    partyNameModalEl.querySelector('input').value = '';
+    partyDateInput.querySelector('input').value = '';
+    taskListEl.innerHTML = ''; // Clear task list when resetting
+}
+
+    // Add task to the task list
+addTaskButton.addEventListener('click', function() {
+const taskInput = document.querySelector('.task-input'); // Task input field
+const task = taskInput.value;
+if (task) {
+    const taskItem = document.createElement('li');
+    taskItem.textContent = task;
+    taskListEl.appendChild(taskItem);
+    taskInput.value = ''; // Clear input after adding
+}
+});
+
+// // Open the modal to edit a guest's information
+// function openEditGuestModal(guestIndex, guestName, guestAssignments) {
+//     editingGuestInfo = true;
+//     modalGuestNameInput.value = guestName;  // Prefill guest name
+//     modalAssignmentsInput.innerHTML = guestAssignments.map(item => `<li>${item}</li>`).join('');
+//     addPersonModal.style.display = 'block';
+
+//       // Save changes
+//       addPersonModal.querySelector().onclick = function() {
+//         const updatedName = modalGuestNameInput.value;
+//         const updatedAssignments = Array.from(modalAssignmentsInput.querySelectorAll('li')).map(li => li.textContent);
+//         editGuestSPI(guestIndex, updatedName, updatedAssignments);
+//         addPersonModal.style.display = 'none';
+//         //local storage function;
+//     };
+
+
+      // AM: updated from above Save changes
+      addPersonModal.querySelector('.modal-footer .btn-success').onclick = function() {
+        const updatedName = modalGuestNameInput.value;
+        const updatedAssignments = Array.from(modalAssignmentsInput.querySelectorAll('li')).map(li => li.textContent);
+        editGuestSPI(guestIndex, updatedName, updatedAssignments);
+        addPersonModal.style.display = 'none';
+        //local storage function would go here
+    };
+
+
+
+//Reset the Party modal
+function resetEditPartyModal() {
+    partyNameModalEl.querySelector('input').value = '';
+    partyDateInput.querySelector('input').value = '';
+
+}
+
+//Open Edit Party Info Modal
+editPartySaveBtn.addEventListener("click", function() {
+    const newPartyName = partyNameModalEl.querySelector('input').value;
+    const [mm, dd, yy] = partyDateInput.querySelector('input').value.split('/');
+    partyNameEL.textContent = newPartyName;
+    partyDateEl.textContent = mm + '/' + dd + '/' + yy;
+    //Edit localstorage function goes here
+    //Hide Modal function goes here
+    resetEditPartyModal();
+})
+
+console.log(partyDateInput);

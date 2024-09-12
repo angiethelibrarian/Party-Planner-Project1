@@ -8,33 +8,28 @@ Motivation: 
 This project aimed to create an all-in-one platform that relieves the stress of party planning for people who want to host events. Planning can be overwhelming, whether it's a birthday, wedding, or corporate event. This website aims to streamline the process by offering easy-to-use tools and resources for planning any celebration, instilling confidence in users that their event will be a success.
 
 Why This Project: 
-We built this project to solve a common problem: the hassle of coordinating various aspects of a party, from managing guest lists to booking vendors and selecting themes. Party Planners provides a comprehensive solution, instilling confidence in users that they can organize all their party details in one place.
+We built this project to solve a common problem: the hassle of coordinating various aspects of a party, such as managing guest lists and party supplies. Party Planners provides a comprehensive solution, instilling confidence in users that they can organize all their party details in one place.
 
 Problem Solved: 
-The site simplifies event planning by offering features such as guest list management, MVP, all in one platform. This eliminates the need to juggle multiple tools or services, saving users time and allowing them to focus on other aspects of their event.
+The site simplifies event planning by offering features such as guest list management, MVP, all in one platform. This eliminates the need to juggle multiple tools or services, saving users time and allowing them to focus on other aspects of their event. 
 
 Lessons Learned: 
 We learned how to integrate multiple services into one cohesive web application throughout the development process. We also gained experience in user experience (UX) design, database management, and ensuring the platform's scalability to handle various event sizes.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
-1. Clone the repository:
-steps...
+1. Clone the repository
 
-2. Navigate to the project directory
+2. Navigate to the project directory - https://github.com/angiethelibrarian/Party-Planner-Project1
 
-3. Access the website: 
+3. Access the website: TBA
 
 ## Usage
+
+### Landing Page
+
+![Full page screenshot](README-images/pic1.png)
+* This is the landing page view
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -59,30 +54,21 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 
 Tutorials:
-https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-https://getbootstrap.com
-https://www.w3schools.com/
-https://getbootstrap.com/
-https://fonts.google.com/selection/embed
-https://www.canva.com/
-https://www.colorzilla.com/gradient-editor/
-
-
-
+* https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+* https://getbootstrap.com
+* https://www.w3schools.com/
+* https://getbootstrap.com/
+* https://fonts.google.com/selection/embed
+* https://www.canva.com/
+* https://www.colorzilla.com/gradient-editor/
+* https://www.awesomescreenshot.com/
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## Features
 
