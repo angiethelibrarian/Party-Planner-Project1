@@ -26,9 +26,10 @@ We learned how to integrate multiple services into one cohesive web application 
 
 ## Usage
 
-### Access the website
+### Landing Page
 
-README-images/pic1.png
+![Full page screenshot](README-images/pic1.png)
+* This is the landing page view
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -53,21 +54,17 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 
 Tutorials:
-https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-https://getbootstrap.com
-https://www.w3schools.com/
-https://getbootstrap.com/
-https://fonts.google.com/selection/embed
-https://www.canva.com/
-https://www.colorzilla.com/gradient-editor/
-https://www.awesomescreenshot.com/
-
-
-
+* https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+* https://getbootstrap.com
+* https://www.w3schools.com/
+* https://getbootstrap.com/
+* https://fonts.google.com/selection/embed
+* https://www.canva.com/
+* https://www.colorzilla.com/gradient-editor/
+* https://www.awesomescreenshot.com/
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
 
 ---
 
