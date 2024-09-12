@@ -54,25 +54,24 @@ main button {
 
 .list-of-people {
     list-style: none;
-
 }
 
 .list-of-people > li {
     border: 3px solid black;
+    
+}
+
+.list-of-people > li > div{
+    background: radial-gradient(var(--color2) -75%, var(--color1) 50%,  var(--color6) 125%);
 }
 
 .list-of-people .assignment-toggle{
     border-left: 3px solid black;
-    padding-left: 5px;
-    
+    padding-left: 5px; 
 }
 
-.list-of-people .assignment-toggle::after{
-    content: ">";
-    margin-left: 5px;
-    border: 1px solid black;
-    padding-right: 5px;
-    padding-left: 5px;
+.list-of-people > li > button:first-of-type {
+    background-color: var(--color1);
 }
 
 .list-of-people > li .person-name{
@@ -114,63 +113,45 @@ footer {
 }
 
 .your-invited {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .invitation {
-    display:flex;
-    flex-wrap:wrap;
-    margin-left: 450px;
-    margin-top: -400px;
+    position: relative;
+    right: 150px;
 }
+
 
 .party-planner {
-    display:flex;
-    flex-wrap:wrap;
-    margin-left: 430px;
-    width: 400px;
-}
-
-.astro-img {
-    width:300px;
-    height:300px;
-    margin-top:-100px;
-    margin-bottom:0px;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    padding: 0 30%;
 }
 
 .astro-2 {
-    width: 400px;
-    height: 400px;
-    margin-left:250px;
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    left: 50px;
 }
 
-.pink-planet {
-    display:flex;
-    flex-wrap:wrap;
-    align-items:flex-start;
-    margin-left:933px;
-    margin-top: -575px;
-    padding:0px;
-}
-
-.orange-planet {
-    display:flex;
-    flex-wrap:wrap;
-    align-items:flex-end;
-    margin-left:-150px;
-    margin-top: -500px;
-    padding:0px;
+.pink-planet, .orange-planet{
+    overflow: hidden;
 }
 
 .pink-planet-img {
-    height: 500px;
-    width: 500px;
+    position: relative;
+    left: 40%;
+    top: -30%;
 }
 
 .orange-planet-img {
-    height: 500px;
-    width: 500px;
+    position: relative;
+    right: 40%;
+    top: -30%;
 }
 
 #addGuest {
@@ -188,25 +169,20 @@ footer {
     color:#121F4E;
 }
 
-/* @media only screen and (min-width: 1291px) {
-    header {
-        min-height:100%;
-    }
-    .yourInvited {
-        display:flex;
-        flex-wrap:wrap; 
-        margin-left: 0px;
-        margin-top:300px;
-    }
-    .pinkPlanet {
-        display:flex;
-        height: 500px;
-        width: 500px;
-    }
+
+
+@media screen and (max-width: 500px) {
     .invitation {
-        display:flex;
-        height: 500px;
-        width: 500px;
-        align-items: center;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        right: 75px;
     }
-} */
+    .astro-2 {
+        max-width: 200px;
+        max-height: 200px;position: relative;
+        left: 25px;
+    }
+}
+
+
