@@ -20,8 +20,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-optical-sizing: auto;
-    /* background-color: #FAE7DE; */
-
+    /* background-color: #FAE7DE; */ 
 }
 
 body, header, footer {
@@ -91,13 +90,16 @@ main button {
 footer {
     background-color: var(--base-color-secondary);
     color: aliceblue;
-    background: URL("../images/grid.png") center, no-repeat; 
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), repeating-conic-gradient(var(--color1) 30%, var(--color5) 30%, var(--color6) 50%, var(--color7) 50%, var(--color9) 70%, var(--color8) 50%, var(--color3) 50%);
     background-size: 150% 200%;
-    border: 5px solid;
-    border-left:0px;
-    border-right:0px;
-    border-image: linear-gradient(to right, var(--color1), var(--color3));
+    /* border-right: 15px solid var(--color6);
+    border-left: 15px solid var(--color8);
+    border-bottom: 15px solid var(--color7); */
+    border-top: 12px solid var(--color9);
+    /* border-radius:20px; */
+    z-index:-1;
 }
+
 
 .modal {
     background-color: rgba(0, 0, 0, 0.5);
@@ -149,8 +151,8 @@ footer {
     display:flex;
     flex-wrap:wrap;
     align-items:flex-start;
-    margin-left:933px;
-    margin-top: -575px;
+    margin-left:762px;
+    margin-top: -450px;
     padding:0px;
 }
 
@@ -159,7 +161,7 @@ footer {
     flex-wrap:wrap;
     align-items:flex-end;
     margin-left:-150px;
-    margin-top: -500px;
+    margin-top: -620px;
     padding:0px;
 }
 
@@ -188,25 +190,83 @@ footer {
     color:#121F4E;
 }
 
-/* @media only screen and (min-width: 1291px) {
-    header {
-        min-height:100%;
-    }
-    .yourInvited {
-        display:flex;
-        flex-wrap:wrap; 
-        margin-left: 0px;
-        margin-top:300px;
-    }
-    .pinkPlanet {
-        display:flex;
-        height: 500px;
-        width: 500px;
-    }
-    .invitation {
-        display:flex;
-        height: 500px;
-        width: 500px;
-        align-items: center;
-    }
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul li {
+    list-style-type:none;
+    font-size:20px;
+}
+
+p {
+    font-size:28px;
+}
+
+.abbagail-thomas {
+    margin-left:500px;
+    margin-top:-160px;
+    padding:10px;
+}
+
+.isaiah-angelica {
+    margin-right:600px;
+    margin-top:50px;
+}
+
+a:link {
+ text-decoration:none;   
+ color: black;
+}
+
+a:hover {
+    pointer-events: visible;
+}
+
+.isaiah {
+    background-color:#1646BE;
+    border-radius:20px;
+    padding:5px;
+}
+
+.abbagail {
+ background-color:#f08282;
+ border-radius:20px;
+ padding:5px;
+}
+
+.angelica {
+    background-color:#e71396;
+    border-radius:20px;
+    padding:5px;
+}
+
+.thomas {
+    background-color:#fc9d31;
+    border-radius:20px;
+    padding:5px;
+}
+
+.thank-you {
+    width: 250px;
+    height: 250px;
+    margin-top: -160px;
+}
+
+.created {
+    height: 200px;
+}
