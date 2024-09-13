@@ -129,9 +129,9 @@ footer p {
     font-size:28px;
 }
 
-a:link {
+footer a {
  text-decoration:none;
- color: black;
+ color: var(--color3);
 }
 
 a:hover {
@@ -140,26 +140,26 @@ a:hover {
 }
 
 .isaiah {
-    background-color:#1646BE;
-    border-radius:20px;
+    background-color: var(--color5);
+    border-radius: 20px;
     box-shadow: 2px 2px black;
 }
 
 .abbagail {
-    background-color:#f08282;
-    border-radius:20px;
+    background-color: var(--color7);
+    border-radius: 20px;
     box-shadow: 2px 2px black;
 }
 
 .angelica {
-    background-color:#e71396;
-    border-radius:20px;
+    background-color: var(--color6);
+    border-radius :20px;
     box-shadow: 2px 2px black;
 }
 
 .thomas {
-    background-color:#fc9d31;
-    border-radius:20px;
+    background-color: var(--color8);
+    border-radius: 20px;
     box-shadow: 2px 2px black;
 }
 
@@ -200,7 +200,8 @@ footer {
     }
     .astro-2 {
         max-width: 200px;
-        max-height: 200px;position: relative;
+        max-height: 200px;
+        position: relative;
         left: 25px;
     }
 }
