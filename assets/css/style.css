@@ -20,24 +20,11 @@ body {
     font-weight: 400;
     font-style: normal;
     font-optical-sizing: auto;
-    /* background-color: #FAE7DE; */
-
 }
 
 body, header, footer {
     opacity: 1;
 }
-
-/* header {
-    background-color: var(--color-primary);
-    color: var(--color-text-secondary);
-    font-family: "Playwrite NG Modern", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background: linear-gradient(to right, var(--color1), var(--color2), var(--color4), var(--color3), var(--color4), var(--color2), var(--color1));
-    color: var(--color1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
 
 
 main {
@@ -87,16 +74,86 @@ main button {
     background-color: red;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer ul li {
+    list-style-type:none;
+    font-size:20px;
+}
+
+footer p {
+    font-size:28px;
+}
+
+a:link {
+ text-decoration:none;
+ color: black;
+}
+
+a:hover {
+    pointer-events: visible;
+}
+
+.isaiah {
+    background-color:#1646BE;
+    border-radius:20px;
+    padding:5px;
+}
+
+.abbagail {
+ background-color:#f08282;
+ border-radius:20px;
+ padding:5px;
+}
+
+.angelica {
+    background-color:#e71396;
+    border-radius:20px;
+    padding:5px;
+}
+
+.thomas {
+    background-color:#fc9d31;
+    border-radius:20px;
+    padding:5px;
+}
+
+.thank-you {
+    width: 250px;
+}
+
 footer {
     background-color: var(--base-color-secondary);
     color: aliceblue;
-    background: URL("../images/grid.png") center, no-repeat; 
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), repeating-conic-gradient(var(--color1) 30%, var(--color5) 30%, var(--color6) 50%, var(--color7) 50%, var(--color9) 70%, var(--color8) 50%, var(--color3) 50%);
     background-size: 150% 200%;
-    border: 5px solid;
-    border-left:0px;
-    border-right:0px;
-    border-image: linear-gradient(to right, var(--color1), var(--color3));
+    border-top: 12px solid var(--color9);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .modal {
     background-color: rgba(0, 0, 0, 0.5);
@@ -168,6 +225,7 @@ footer {
     background:linear-gradient(to right,var(--color8),var(--color9), var(--color7), var(--color1));
     color:#121F4E;
 }
+
 
 
 
