@@ -216,6 +216,14 @@ function resetEPIModal() {
     }
 }
 
+function initEPIModal () {
+    const currentPartyDate = partyDateEl.textContent.split("/");
+    EPIPartyNameInput.value = partyNameEl.textContent;
+    EPIPartyDateInputs[0].value = currentPartyDate[0];
+    EPIPartyDateInputs[1].value = currentPartyDate[1];
+    EPIPartyDateInputs[2].value = currentPartyDate[2];
+};
+
 function applyEPIModalChanges() {
     const newPartyName = EPIPartyNameInput.value;
     const mm = EPIPartyDateInputs[0].value;
@@ -299,6 +307,7 @@ resetBtn.addEventListener('click', function() {
 }); 
 
 EPIBtn.addEventListener('click', function() {
+    initEPIModal();
     showModal(EPIModal);
 }); 
 

@@ -1,3 +1,4 @@
+/* Staring CSS */
 :root {
     --color1: #121F4E;  
     --color2: #642E93;  
@@ -10,10 +11,6 @@
     --color9: #e0cf35;
 }
 
-body, html {
-    min-height:100%;
-}
-
 body {
     background: linear-gradient(rgba(0, 0, 104, .5), rgba(0, 0, 100, .5)), URL("../images/star-image.jpg");
     font-family: "Space Mono", monospace;
@@ -22,11 +19,38 @@ body {
     font-optical-sizing: auto;
 }
 
-body, header, footer {
-    opacity: 1;
+/* Header CSS */
+.party-planner {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    padding: 0 30%;
 }
 
+.astro-2 {
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    left: 50px;
+}
 
+.pink-planet, .orange-planet{
+    overflow: hidden;
+}
+
+.pink-planet-img {
+    position: relative;
+    left: 40%;
+    top: -30%;
+}
+
+.orange-planet-img {
+    position: relative;
+    right: 40%;
+    top: -30%;
+}
+
+/* Main CSS */
 main {
     background-color: var(--color-primary);
     color: var(--color-text-primary);
@@ -35,7 +59,6 @@ main {
 }
 
 main button {
-    background-color: var(--base-color-secondary);
     color: var(--color-text-primary);
 }
 
@@ -74,143 +97,6 @@ main button {
     background-color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer ul li {
-    list-style-type:none;
-    font-size:20px;
-}
-
-footer p {
-    font-size:28px;
-}
-
-a:link {
- text-decoration:none;
- color: black;
-}
-
-a:hover {
-    pointer-events: visible;
-}
-
-.isaiah {
-    background-color:#1646BE;
-    border-radius:20px;
-    padding:5px;
-}
-
-.abbagail {
- background-color:#f08282;
- border-radius:20px;
- padding:5px;
-}
-
-.angelica {
-    background-color:#e71396;
-    border-radius:20px;
-    padding:5px;
-}
-
-.thomas {
-    background-color:#fc9d31;
-    border-radius:20px;
-    padding:5px;
-}
-
-.thank-you {
-    width: 250px;
-}
-
-footer {
-    background-color: var(--base-color-secondary);
-    color: aliceblue;
-    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), repeating-conic-gradient(var(--color1) 30%, var(--color5) 30%, var(--color6) 50%, var(--color7) 50%, var(--color9) 70%, var(--color8) 50%, var(--color3) 50%);
-    background-size: 150% 200%;
-    border-top: 12px solid var(--color9);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.modal {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal input {
-    border-radius: 10px;
-    border-color: rgba(0, 0, 100, 0.5);
-    background-color: rgba(0, 130, 200, 0.3);
-}
-
-.modal-content {
-    background:linear-gradient(to right, var(--color8), var(--color7));
-}
-
-.your-invited {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.invitation {
-    position: relative;
-    right: 150px;
-}
-
-
-.party-planner {
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    padding: 0 30%;
-}
-
-.astro-2 {
-    max-width: 400px;
-    max-height: 400px;
-    position: relative;
-    left: 50px;
-}
-
-.pink-planet, .orange-planet{
-    overflow: hidden;
-}
-
-.pink-planet-img {
-    position: relative;
-    left: 40%;
-    top: -30%;
-}
-
-.orange-planet-img {
-    position: relative;
-    right: 40%;
-    top: -30%;
-}
-
 #addGuest {
     background:linear-gradient(to right,var(--color9), var(--color8), var(--color9));
     color:#121F4E;
@@ -226,9 +112,85 @@ footer {
     color:#121F4E;
 }
 
+/* Custom Image CSS */
+.your-invited {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.invitation {
+    position: relative;
+    right: 150px;
+}
 
+/* Footer CSS */
+footer p {
+    font-size:28px;
+}
 
+a:link {
+ text-decoration:none;
+ color: black;
+}
+
+a:hover {
+    pointer-events: visible;
+    color: var(--color3);
+}
+
+.isaiah {
+    background-color:#1646BE;
+    border-radius:20px;
+    box-shadow: 2px 2px black;
+}
+
+.abbagail {
+    background-color:#f08282;
+    border-radius:20px;
+    box-shadow: 2px 2px black;
+}
+
+.angelica {
+    background-color:#e71396;
+    border-radius:20px;
+    box-shadow: 2px 2px black;
+}
+
+.thomas {
+    background-color:#fc9d31;
+    border-radius:20px;
+    box-shadow: 2px 2px black;
+}
+
+.thank-you {
+    width: 250px;
+}
+
+footer {
+    background-color: var(--base-color-secondary);
+    color: aliceblue;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.4), rgba(50, 50, 50, 0.4)), repeating-conic-gradient(var(--color1) 30%, var(--color5) 30%, var(--color6) 50%, var(--color7) 50%, var(--color9) 70%, var(--color8) 50%, var(--color3) 50%);
+    background-size: 150% 200%;
+    border-top: 12px solid var(--color9);
+}
+
+/* Modal CSS */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal input {
+    border-radius: 10px;
+    border-color: rgba(0, 0, 100, 0.5);
+    background-color: rgba(0, 130, 200, 0.3);
+}
+
+.modal-content {
+    background:linear-gradient(to right, var(--color8), var(--color7));
+}
+
+/* Custom Image Responsiveness For Smaller Screens */
 @media screen and (max-width: 500px) {
     .invitation {
         height: 200px;
