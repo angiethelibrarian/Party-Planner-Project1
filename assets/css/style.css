@@ -84,6 +84,10 @@ main button {
     background-color: var(--color1);
 }
 
+.list-of-people > li > button:first-of-type img {
+    width: 20px;
+}
+
 .list-of-people > li .person-name{
     font-size: large;
 }
