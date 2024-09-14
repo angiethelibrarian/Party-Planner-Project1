@@ -123,7 +123,7 @@ function addGuestLiEl(gName, assignments) {
                         ${totalGuestAssignments}
                     </ul>
                 </div>
-                <button class="col-1 p-0">&#128393;</button>
+                <button class="col-1 p-0">🖉</button>
                 <button class="col-1 p-0 remove-person">X</button>
             `;
 
