@@ -5,9 +5,9 @@
 Bootcamp Project 1 - Party Planner Site
 
 Motivation:
-Love hosting but hate the logistics? This tool is for you! Our Party Planners site puts everything in one place. Simple UI to create guest lists, assign tasks, and store details. Your progress is always saved. Perfect for on-the-go planning.
+Love hosting but hate the logistics? This tool is for you! Our Party Planner site puts everything in one place. Simple UI to create guest lists, assign tasks, and store details. Your progress is always saved. Perfect for on-the-go planning.
 
-Our Simply Solution:
+Our Simple Solution:
 Party planning should be fun and not stressful. The Party Planner site lets you manage your guest lists, assign party tasks (e.i. bringing chips and drinks), and store details all in one place. Just one platform to save time and be organized so you can enjoy your party, and cry if you want to.
 
 Tips:
@@ -23,7 +23,7 @@ We wanted a simple experience for busy people. We learned to build a platform th
 
 ### Landing Page
 
-![Full page screenshot](README-images/pic1.png)
+![Full page screenshot](README-images/Party-Planner-Landing-Page.png)
 * This is the landing page view
 
 
