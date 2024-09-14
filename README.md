@@ -49,3 +49,21 @@ Collaborators
 
 
 ## Features
+
+![Full page screenshot](README-images/Party-Planner-Guest-Structure.png)
+* Party Planner Guest Structure 
+
+![Full page screenshot](README-images/AddGuest.png)
+* Modal with Person and Party Task Info added
+
+![Full page screenshot](README-images/AddGuest-Btn-Modal.png)
+* Add Person and Party Task Info
+
+![Full page screenshot](README-images/AddGuest-Task.png)
+* Modal with Person and Party Task Info added
+
+![Full page screenshot](README-images/EditParty-Btn-Modal.png)
+* Modal with Person and Party Task Info added
+
+![Full page screenshot](README-images/Remove-Btn.png)
+* Reset Party Data Modal
