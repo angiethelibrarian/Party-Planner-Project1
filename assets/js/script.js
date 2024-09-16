@@ -250,7 +250,7 @@ function addTaskAddGuestModal() {
     newPartyTaskEl.classList = "row text-left border-bottom border-dark my-1 mx-0 py-1 px-0";
     newPartyTaskEl.innerHTML =`
         <p class="col-9">${addGuestPartyTaskInput.value}</p>
-        <button class="col-2 btn btn-danger">remove</button>
+        <button class="col-2 btn btn-danger">X</button>
         `;
     addGuestPartyTaskList.appendChild(newPartyTaskEl);
 
