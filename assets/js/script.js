@@ -156,7 +156,7 @@ function addGuestLiEl(gName, assignments) {
 
     newLiEl.querySelector("button.remove-person").addEventListener("click", function(e) {
         const parentLiElement = e.target.parentElement;
-        const liElementIndex = Array.from(listOfPeople).indexOf(parentLiElement);
+        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll("* > li")).indexOf(parentLiElement);
         removeGuestSPI(liElementIndex);
         parentLiElement.remove();
     });
