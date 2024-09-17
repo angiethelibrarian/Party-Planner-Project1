@@ -131,7 +131,7 @@ function addGuestLiEl(gName, assignments) {
 
     newLiEl.querySelector("button:first-of-type").addEventListener("click", function(e) {
         const parentLiElement = e.target.parentElement;
-        const liElementIndex = Array.from(listOfPeople).indexOf(parentLiElement);
+        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll("* > li")).indexOf(parentLiElement);
         editingGuestInfo[0] = true;
         editingGuestInfo[1] = liElementIndex;
         
@@ -142,7 +142,7 @@ function addGuestLiEl(gName, assignments) {
             newPartyTaskEl.classList = "row text-left border-bottom border-dark my-1 mx-0 py-1 px-0";
             newPartyTaskEl.innerHTML =`
                 <p class="col-9">${parentLiElement.querySelectorAll(".assignment-list > li")[i].textContent}</p>
-                <button class="col-2 btn btn-danger">remove</button>
+                <button class="col-2 btn btn-danger"></button>
                 `;
             addGuestPartyTaskList.appendChild(newPartyTaskEl);
         
