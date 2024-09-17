@@ -131,7 +131,7 @@ function addGuestLiEl(gName, assignments) {
 
     newLiEl.querySelector("button:first-of-type").addEventListener("click", function(e) {
         const parentLiElement = e.target.parentElement;
-        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll("* > li")).indexOf(parentLiElement);
+        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll(":scope > li")).indexOf(parentLiElement);
         editingGuestInfo[0] = true;
         editingGuestInfo[1] = liElementIndex;
         
@@ -156,12 +156,10 @@ function addGuestLiEl(gName, assignments) {
 
     newLiEl.querySelector("button.remove-person").addEventListener("click", function(e) {
         const parentLiElement = e.target.parentElement;
-        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll("* > li")).indexOf(parentLiElement);
+        const liElementIndex = Array.from(listOfPeopleContainerEl.querySelectorAll(":scope > li")).indexOf(parentLiElement);
         removeGuestSPI(liElementIndex);
         parentLiElement.remove();
     });
-
-    listOfPeople = document.querySelectorAll(".list-of-people > li");
 };
 
 // edit existing guest list element
@@ -172,7 +170,7 @@ function editGuestLiEl(guestIndex, gName, assignments) {
             <li>${assignments[i]}</li>
         `;
     }
-    const selectedLiEl = listOfPeopleContainerEl.querySelectorAll("* > li")[guestIndex];
+    const selectedLiEl = listOfPeopleContainerEl.querySelectorAll(":scope > li")[guestIndex];
 
     selectedLiEl.querySelector(".person-name").textContent = gName;
     selectedLiEl.querySelector(".assignment-list").innerHTML = totalGuestAssignments;
